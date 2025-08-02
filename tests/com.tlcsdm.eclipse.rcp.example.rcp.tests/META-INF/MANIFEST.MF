@@ -14,4 +14,5 @@ Require-Bundle: org.eclipse.ui,
  org.junit,
  org.eclipse.swtbot.junit4_x,
  com.tlcsdm.eclipse.rcp.example.rcp,
- org.eclipse.ui.workbench
+ org.eclipse.ui.workbench,
+ org.eclipse.ui.ide
