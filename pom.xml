@@ -33,6 +33,7 @@
     <module>bundles/</module>
     <module>features/</module>
     <module>sites/</module>
+    <module>tests/</module>
   </modules>
   <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:https://github.com/tlcsdm/eclipse-rcp-example.git</connection>
@@ -414,9 +415,14 @@
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-surefire-plugin</artifactId>
         <configuration>
-          <!-- No UI test for this component -->
-          <useUIThread>false</useUIThread>
-          <useUIHarness>false</useUIHarness>
+          <!-- false: No UI test for this component -->
+          <useUIThread>true</useUIThread>
+          <useUIHarness>true</useUIHarness>
+          <product>com.tlcsdm.eclipse.rcp.example.rcp.product</product>
+          <includes>
+            <include>**/*Test.*</include>
+            <include>**/*IT.*</include>
+          </includes>
         </configuration>
       </plugin>
     </plugins>
