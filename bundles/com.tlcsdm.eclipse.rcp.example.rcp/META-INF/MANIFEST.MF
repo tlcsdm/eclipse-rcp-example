@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse RCP Example Standalone
+Bundle-SymbolicName: com.tlcsdm.eclipse.rcp.example.rcp;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Tlcsdm
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.rcp
+Require-Bundle: org.eclipse.ui;bundle-version="[3.204.0,4.0.0)",
+ org.eclipse.core.runtime;bundle-version="[3.29.0,4.0.0)",
+ org.eclipse.ui.workbench;bundle-version="[3.130.0,4.0.0)",
+ org.eclipse.swt;bundle-version="[3.124.0,4.0.0)",
+ org.eclipse.core.variables;bundle-version="[3.6.0,4.0.0)",
+ org.eclipse.ui.ide;bundle-version="[3.21.0,4.0.0)",
+ org.eclipse.ui.console;bundle-version="[3.13.0,4.0.0)"

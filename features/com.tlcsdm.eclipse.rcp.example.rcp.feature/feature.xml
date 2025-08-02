@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.tlcsdm.eclipse.rcp.example.rcp.feature"
+      label="Eclipse RCP Example"
+      version="1.0.0.qualifier"
+      provider-name="Tlcsdm">
+
+   <description>
+      Eclipse RCP Example
+   </description>
+
+   <copyright>
+      Copyright (c) 2025 Tlcsdm.
+All rights reserved.
+   </copyright>
+
+   <plugin
+         id="com.tlcsdm.eclipse.rcp.example.rcp"
+         version="0.0.0"/>
+
+</feature>
