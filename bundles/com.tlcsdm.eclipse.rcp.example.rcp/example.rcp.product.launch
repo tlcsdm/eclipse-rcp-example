@@ -25,7 +25,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms256m -Xmx1024m"/>
     <stringAttribute key="pde.version" value="3.3"/>
     <stringAttribute key="product" value="com.tlcsdm.eclipse.rcp.example.rcp.product"/>
-    <stringAttribute key="productFile" value="\com.tlcsdm.eclipse.rcp.example.rcp.product.product\com.tlcsdm.eclipse.rcp.example.rcp.product"/>
+    <stringAttribute key="productFile" value="\com.tlcsdm.eclipse.rcp.example.rcp.product\com.tlcsdm.eclipse.rcp.example.rcp.product"/>
     <setAttribute key="selected_features">
         <setEntry value="com.tlcsdm.eclipse.rcp.example.rcp.feature:default"/>
         <setEntry value="org.eclipse.e4.rcp:default"/>

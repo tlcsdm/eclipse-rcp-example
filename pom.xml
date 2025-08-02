@@ -52,6 +52,7 @@
     </snapshotRepository>
   </distributionManagement>
   <properties>
+    <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
     <cyclonedx.version>2.7.9</cyclonedx.version>
     <jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
     <maven-artifact.version>3.9.3</maven-artifact.version>
@@ -115,6 +116,11 @@
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
           <artifactId>tycho-source-plugin</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-p2-director-plugin</artifactId>
           <version>${tycho.version}</version>
         </plugin>
         <plugin>
@@ -315,7 +321,7 @@
             <environment>
               <os>macosx</os>
               <ws>cocoa</ws>
-              <arch>x86_64</arch>
+              <arch>aarch64</arch>
             </environment>
           </environments>
         </configuration>
@@ -335,6 +341,16 @@
           <mapP2Dependencies>false</mapP2Dependencies>
           <!-- Skip pom generation in jar, so we are able to get the jar in maven Tycho-free environment -->
           <skipPomGeneration>true</skipPomGeneration>
+          <archive>
+            <manifestEntries>
+              <Built-By>${user.name}</Built-By>
+              <Build-Os>${os.name} (${os.version}; (${os.arch})</Build-Os>
+              <Build-Os>${os.name} (${os.version}; (${os.arch})</Build-Os>
+              <Created-By>Tlcsdm</Created-By>
+              <Build-Time>${maven.build.timestamp}</Build-Time>
+            </manifestEntries>
+            <addMavenDescriptor>false</addMavenDescriptor>
+          </archive>
         </configuration>
       </plugin>
       <plugin>
@@ -373,6 +389,25 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-director-plugin</artifactId>
+        <configuration>
+          <formats>
+            <win32>zip</win32>
+            <linux>tar.gz</linux>
+            <macosx>tar.gz</macosx>
+          </formats>
+          <products>
+            <product>
+              <id>com.tlcsdm.eclipse.rcp.example.rcp.product</id>
+              <attachId>com.tlcsdm.eclipse.rcp.example.rcp.product</attachId>
+              <rootFolder>eclipse</rootFolder>
+              <!-- <archiveFileName>Eclipse-RCP-Example-${unqualifiedVersion}</archiveFileName> -->
+            </product>
+          </products>
+        </configuration>
       </plugin>
       <!-- Configuration for test plugins/fragments -->
       <plugin>
