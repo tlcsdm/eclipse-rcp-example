@@ -1,16 +1,17 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Eclipse RCP Example Tests
-Bundle-SymbolicName: com.tlcsdm.eclipse.rcp.example.rcp.tests;singleton:=true
+Bundle-SymbolicName: com.tlcsdm.eclipse.rcp.example.rcp.tests
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Tlcsdm
 Bundle-RequiredExecutionEnvironment: JavaSE-17
+Fragment-Host: com.tlcsdm.eclipse.rcp.example.rcp
 Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.rcp.tests
+Export-Package: com.tlcsdm.eclipse.rcp.example.rcp.tests
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.ui.workbench,
  org.eclipse.swtbot.eclipse.finder,
  org.eclipse.swtbot.swt.finder,
  org.junit,
- com.tlcsdm.eclipse.rcp.example.rcp,
  org.eclipse.swtbot.junit4_x

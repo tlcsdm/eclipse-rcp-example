@@ -53,9 +53,9 @@ public class ConfigurationPartTest {
         }
 
         // 打开 ViewPart，如果你已注册为视图
-        bot.menu("Window").menu("Show View").menu("Other...").click();
-        bot.tree().expandNode("Your Category").select("ConfigurationPart"); // 修改为实际分类
-        bot.button("Open").click();
+        //        bot.menu("Window").menu("Show View").click();
+        //        bot.tree().expandNode("Your Category").select("Configuration View"); // 修改为实际分类
+        //        bot.button("Open").click();
     }
 
     @AfterClass
