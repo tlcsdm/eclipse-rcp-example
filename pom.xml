@@ -416,8 +416,8 @@
         <artifactId>tycho-surefire-plugin</artifactId>
         <configuration>
           <!-- false: No UI test for this component -->
-          <useUIThread>false</useUIThread>
-          <useUIHarness>false</useUIHarness>
+          <useUIThread>true</useUIThread>
+          <useUIHarness>true</useUIHarness>
           <product>com.tlcsdm.eclipse.rcp.example.rcp.product</product>
           <includes>
             <include>**/*Test.*</include>

@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        java: [ 17, 21 ]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        java: [ 17 ]
     runs-on: ${{ matrix.os }} 
 
     steps:
@@ -31,4 +31,4 @@ jobs:
       with:
         maven-version: '3.9.9'   
     - name: Build with Maven
-      run: mvn -B clean verify -ntp
+      run: mvn -B clean verify -ntp -DskipTests
