@@ -10,7 +10,6 @@ Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.rcp.tests
 Export-Package: com.tlcsdm.eclipse.rcp.example.rcp.tests
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- org.eclipse.ui.workbench,
  org.eclipse.swtbot.eclipse.finder,
  org.eclipse.swtbot.swt.finder,
  org.junit,
