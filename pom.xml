@@ -419,7 +419,7 @@
           <useUIThread>true</useUIThread>
           <useUIHarness>true</useUIHarness>
           <product>com.tlcsdm.eclipse.rcp.example.rcp.product</product>
-          <application>com.tlcsdm.eclipse.rcp.example.rcp.application</application>
+          <!-- <application>com.tlcsdm.eclipse.rcp.example.rcp.application</application> -->
           <includes>
             <include>**/*Test.*</include>
             <include>**/*IT.*</include>
