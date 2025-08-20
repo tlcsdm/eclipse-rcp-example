@@ -46,7 +46,6 @@
 	    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		    <repository location="https://mirrors.aliyun.com/eclipse/ease/release/latest"/>
 		    <unit id="org.eclipse.ease.feature.feature.group" version="0.0.0"/>
-		    <unit id="org.eclipse.ease.lang.groovy.feature.feature.group" version="0.0.0"/>
 		    <unit id="org.eclipse.ease.lang.javascript.feature.feature.group" version="0.0.0"/>
 		    <unit id="org.eclipse.ease.lang.jvm.feature.feature.group" version="0.0.0"/>
 		    <unit id="org.eclipse.ease.lang.python.feature.feature.group" version="0.0.0"/>
