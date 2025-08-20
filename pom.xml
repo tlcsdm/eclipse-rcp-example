@@ -635,5 +635,17 @@
         <spotless.check.skip>true</spotless.check.skip>
       </properties>
     </profile>
+    <profile>
+      <id>osx</id>
+      <activation>
+        <os>
+          <family>mac</family>
+        </os>
+      </activation>
+      <properties>
+        <!-- SWT on Mac OS needs to be started on main thread -->
+        <tycho.testArgLine>-XstartOnFirstThread</tycho.testArgLine>
+      </properties>
+    </profile>
   </profiles>
 </project>
