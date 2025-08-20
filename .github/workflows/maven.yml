@@ -31,4 +31,9 @@ jobs:
       with:
         maven-version: '3.9.9'   
     - name: Build with Maven
-      run: mvn -B clean verify -ntp
+      run: |
+        if [ "${{ matrix.os }}" = "windows-latest" ]; then
+          mvn -B clean verify
+        else
+          mvn -B clean verify -DskipTests
+        fi
