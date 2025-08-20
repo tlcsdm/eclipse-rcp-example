@@ -29,6 +29,7 @@ package com.tlcsdm.eclipse.rcp.example.rcp.tests;
 import static org.junit.Assert.assertEquals;
 
 import org.eclipse.swtbot.eclipse.finder.SWTWorkbenchBot;
+import org.eclipse.swtbot.eclipse.finder.widgets.SWTBotView;
 import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotButton;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotLabel;
@@ -53,9 +54,10 @@ public class ConfigurationPartTest {
         }
 
         // 打开 ViewPart，如果你已注册为视图
-        //        bot.menu("Window").menu("Show View").click();
-        //        bot.tree().expandNode("Your Category").select("Configuration View"); // 修改为实际分类
-        //        bot.button("Open").click();
+        // bot.menu("Window").menu("Show View").click();
+        // bot.tree().expandNode("Your Category").select("Configuration View"); //
+        // 修改为实际分类
+        // bot.button("Open").click();
     }
 
     @AfterClass
@@ -66,10 +68,14 @@ public class ConfigurationPartTest {
     @Test
     public void testLabelAndButtonInteraction() {
         System.out.println("开始测试 ConfigurationPart 的标签和按钮交互...");
-        SWTBotLabel label = bot.label(0); // 默认只有一个 label
+
+        SWTBotView view = bot.viewByTitle("Eclipse Example Configuration");
+        SWTBotLabel label = view.bot().label(0);
+        SWTBotButton button = view.bot().button("Click Me");
+
+        System.out.println(label.getText());
         assertEquals("Hello, Eclipse RCP!", label.getText());
 
-        SWTBotButton button = bot.button("Click Me");
         button.click();
 
         assertEquals("You clicked the button!", label.getText());

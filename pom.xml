@@ -76,12 +76,14 @@
     <maven-install-plugin.version>3.1.1</maven-install-plugin.version>
     <maven-deploy-plugin.version>3.1.1</maven-deploy-plugin.version>
     <maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
+    <maven-enforcer-plugin.version>3.6.1</maven-enforcer-plugin.version>
     <!-- Spotless resources location -->
     <eclipse.formatter.file>${maven.multiModuleProjectDirectory}/formatter.xml</eclipse.formatter.file>
     <eclipse.importorder.file>${maven.multiModuleProjectDirectory}/eclipse.importorder</eclipse.importorder.file>
     <header.file>${maven.multiModuleProjectDirectory}/header.txt</header.file>
     <target.file>${maven.multiModuleProjectDirectory}/target-platform.target</target.file>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>17</java.version>
     <maven.compiler.release>${java.version}</maven.compiler.release>
     <maven.deploy.skip>true</maven.deploy.skip>
@@ -297,6 +299,17 @@
       </plugin>
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-compiler-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <configuration>
+          <encoding>${project.build.sourceEncoding}</encoding>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+          <compilerArgument>-warn:+discouraged,forbidden</compilerArgument>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-versions-plugin</artifactId>
       </plugin>
       <plugin>
@@ -347,12 +360,38 @@
               <Built-By>${user.name}</Built-By>
               <Build-Os>${os.name} (${os.version}; (${os.arch})</Build-Os>
               <Build-Os>${os.name} (${os.version}; (${os.arch})</Build-Os>
-              <Created-By>Tlcsdm</Created-By>
+              <Created-By>${project.organization.name)</Created-By>
               <Build-Time>${maven.build.timestamp}</Build-Time>
             </manifestEntries>
             <addMavenDescriptor>false</addMavenDescriptor>
           </archive>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>${maven-enforcer-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>enforce-env</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <phase>validate</phase>
+            <configuration>
+              <rules>
+                <requireJavaVersion>
+                  <message><![CDATA[You are running an older version of Java. This application requires at least JDK ${java.version}.]]></message>
+                  <version>[${java.version}},)</version>
+                </requireJavaVersion>
+                <requireMavenVersion>
+                  <message><![CDATA[You are running an older version of Maven. This application requires at least Maven 3.9.0]]></message>
+                  <version>[3.9.0,)</version>
+                </requireMavenVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -419,6 +458,8 @@
           <useUIThread>true</useUIThread>
           <useUIHarness>true</useUIHarness>
           <product>com.tlcsdm.eclipse.rcp.example.rcp.product</product>
+          <application>com.tlcsdm.eclipse.rcp.example.rcp.application</application>
+          <argLine>-Dfile.encoding=UTF-8</argLine>
           <includes>
             <include>**/*Test.*</include>
             <include>**/*IT.*</include>
