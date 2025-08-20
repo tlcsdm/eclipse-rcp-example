@@ -31,5 +31,9 @@
             <unit id="openjfx.media.feature.feature.group" version="0.0.0"/>
             <unit id="openjfx.web.feature.feature.group" version="0.0.0"/>
         </location>
+        <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+            <repository location="https://mirrors.aliyun.com/eclipse/cbi/updates/license/"/>
+            <unit id="org.eclipse.license.feature.group" version="0.0.0"/>
+		</location>
     </locations>
 </target>

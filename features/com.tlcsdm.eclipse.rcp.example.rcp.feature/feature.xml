@@ -3,19 +3,27 @@
       id="com.tlcsdm.eclipse.rcp.example.rcp.feature"
       label="Eclipse RCP Example"
       version="1.0.0.qualifier"
-      provider-name="Tlcsdm">
+      provider-name="Tlcsdm"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
    <description>
       Eclipse RCP Example
    </description>
 
    <copyright>
-      Copyright (c) 2025 Tlcsdm.
-All rights reserved.
+      Copyright (c) 2025 Tlcsdm. All rights reserved.
    </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
 
    <plugin
          id="com.tlcsdm.eclipse.rcp.example.rcp"
-         version="0.0.0"/>
-
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
 </feature>
