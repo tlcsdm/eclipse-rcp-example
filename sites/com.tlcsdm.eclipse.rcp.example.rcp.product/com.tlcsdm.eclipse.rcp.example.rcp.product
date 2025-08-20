@@ -325,6 +325,7 @@ version(s), and exceptions or additional permissions here}.&quot;
       <feature id="org.eclipse.rcp"/>
       <feature id="com.tlcsdm.eclipse.rcp.example.rcp.feature"/>
       <feature id="org.eclipse.justj.openjdk.hotspot.jre.full.stripped"/>
+      <feature id="org.eclipse.babel.nls_eclipse_zh"/>
    </features>
 
    <configurations>
