@@ -457,7 +457,6 @@
           <!-- false: No UI test for this component -->
           <useUIThread>true</useUIThread>
           <useUIHarness>true</useUIHarness>
-          <product>com.tlcsdm.eclipse.rcp.example.rcp.product</product>
           <application>com.tlcsdm.eclipse.rcp.example.rcp.application</application>
           <argLine>-Dfile.encoding=UTF-8</argLine>
           <includes>
