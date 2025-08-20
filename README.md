@@ -16,4 +16,4 @@ mvn clean org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=2.0.0
 
 ## Install
 
-Download from [Jenkins](https://jenkins.tlcsdm.com/job/eclipse-plugin/job/eclipse-translation)
+Download from [Jenkins](https://jenkins.tlcsdm.com/job/eclipse-rcp/job/eclipse-rcp-example)
