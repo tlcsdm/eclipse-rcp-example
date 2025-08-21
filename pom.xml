@@ -446,6 +446,11 @@
               <rootFolder>eclipse</rootFolder>
               <!-- <archiveFileName>Eclipse-RCP-Example-${unqualifiedVersion}</archiveFileName> -->
             </product>
+            <product>
+              <id>com.tlcsdm.eclipse.rcp.example.update.product</id>
+              <attachId>com.tlcsdm.eclipse.rcp.example.update.product</attachId>
+              <rootFolder>eclipse</rootFolder>
+            </product>
           </products>
         </configuration>
       </plugin>

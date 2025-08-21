@@ -58,10 +58,12 @@
 		    <repository id="py4j" location="http://eclipse.py4j.org/"/>
 		    <unit id="org.py4j.feature.feature.group" version="0.0.0"/>
 	    </location>
+	    <!-- 
 	    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
 		    <repository id="PyDev" location="https://www.pydev.org/update_sites/13.0.2"/>
 		    <unit id="org.python.pydev.feature.feature.group" version="0.0.0"/>
 	    </location>
+	    -->
 	    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
 		    <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository/"/>
 		    <unit id="javax.inject" version="0.0.0"/>

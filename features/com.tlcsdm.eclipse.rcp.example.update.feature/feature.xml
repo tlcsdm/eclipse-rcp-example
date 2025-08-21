@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.tlcsdm.eclipse.rcp.example.update.feature"
+      label="Eclipse Example RCP Update Feature"
+      version="1.0.0.qualifier"
+      provider-name="Tlcsdm"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
+
+   <description>
+      Eclipse Example RCP Update
+   </description>
+
+   <copyright>
+      Copyright (c) 2025 Tlcsdm. All rights reserved.
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.equinox.p2.core.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.equinox.p2.discovery.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.equinox.p2.extras.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.tlcsdm.eclipse.rcp.example.rcp.feature"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.tlcsdm.eclipse.rcp.example.update"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.ui"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.ui.sdk"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.equinox.security.ui"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.updatesite"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.ui.importexport"
+         version="0.0.0"/>
+
+</feature>

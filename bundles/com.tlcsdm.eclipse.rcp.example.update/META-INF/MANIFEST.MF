@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse RCP Example Update Site
+Bundle-SymbolicName: com.tlcsdm.eclipse.rcp.example.update;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.tlcsdm.eclipse.rcp.example.update.Activator
+Bundle-Vendor: Tlcsdm
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.equinox.p2.ui.sdk,
+ org.eclipse.equinox.p2.core,
+ org.eclipse.equinox.p2.engine,
+ org.eclipse.equinox.p2.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.update
+Bundle-ActivationPolicy: lazy
