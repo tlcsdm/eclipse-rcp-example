@@ -127,7 +127,7 @@
                         label="Window">
                         <command
                               commandId="com.tlcsdm.eclipse.rcp.example.rcp.menus.lightingview"
-                              id="views"
+                              id="lightingview"
                               style="push">
                         </command>
                   </menu>
