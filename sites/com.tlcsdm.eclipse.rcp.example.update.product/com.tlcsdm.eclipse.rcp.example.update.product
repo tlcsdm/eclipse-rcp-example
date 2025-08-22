@@ -341,6 +341,7 @@ version(s), and exceptions or additional permissions here}.&quot;
 
    <repositories>
       <repository location="https://mirrors.aliyun.com/eclipse/releases/2024-06/" name="Eclipse Repository" enabled="true" />
+      <repository location="https://raw.githubusercontent.com/tlcsdm/eclipse-rcp-example/master/update_site/com.tlcsdm.eclipse.rcp.example.update.repo/" name="Eclipse Example Update RCP" enabled="true" />
    </repositories>
 
    <preferencesInfo>
