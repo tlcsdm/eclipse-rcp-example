@@ -360,7 +360,7 @@
               <Built-By>${user.name}</Built-By>
               <Build-Os>${os.name} (${os.version}; (${os.arch})</Build-Os>
               <Build-Os>${os.name} (${os.version}; (${os.arch})</Build-Os>
-              <Created-By>${project.organization.name)</Created-By>
+              <Created-By>${project.organization.name}</Created-By>
               <Build-Time>${maven.build.timestamp}</Build-Time>
             </manifestEntries>
             <addMavenDescriptor>false</addMavenDescriptor>
