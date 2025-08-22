@@ -23,12 +23,10 @@ jobs:
       - name: Copy update site content to update_site/
         run: |
           rm -rf update_site/*
-          mkdir -p update_site
-          for repo in sites/*.repo/target/repository; do
-            name=$(basename "$(dirname "$repo")")
-            mkdir -p "update_site/$name"
-            cp -r "$repo/"* "update_site/$name/"
-          done
+          name=$(basename "$(dirname "$(dirname sites/*.repo/target/repository")")")
+          echo $name
+          mkdir -p "update_site/$name"
+          cp -r sites/*.repo/target/repository/* "update_site/$name/"
 
       - name: Configure git
         run: |
