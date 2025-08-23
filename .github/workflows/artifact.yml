@@ -24,21 +24,21 @@ jobs:
     - name: Archive windows product
       uses: actions/upload-artifact@v4
       with:
-        name: com.tlcsdm.eclipse.rcp.example.rcp.product-win32.win32.x86_64
+        name: rcp.product-win32.win32.x86_64
         path: sites/com.tlcsdm.eclipse.rcp.example.rcp.product/target/products/*win32*.zip
     - name: Archive macos product
       uses: actions/upload-artifact@v4
       with:
-        name: com.tlcsdm.eclipse.rcp.example.rcp.product-macosx.cocoa.aarch64
+        name: rcp.product-macosx.cocoa.aarch64
         path: sites/com.tlcsdm.eclipse.rcp.example.rcp.product/target/products/*macos*.tar.gz
     - name: Archive linux product
       uses: actions/upload-artifact@v4
       with:
-        name: com.tlcsdm.eclipse.rcp.example.rcp.product-linux.gtk.x86_64
+        name: rcp.product-linux.gtk.x86_64
         path: sites/com.tlcsdm.eclipse.rcp.example.rcp.product/target/products/*linux*.tar.gz
 
     - name: Archive update windows product
       uses: actions/upload-artifact@v4
       with:
-        name: com.tlcsdm.eclipse.rcp.example.update.product-win32.win32.x86_64
+        name: update.product-win32.win32.x86_64
         path: sites/com.tlcsdm.eclipse.rcp.example.update.product/target/products/*win32*.zip
