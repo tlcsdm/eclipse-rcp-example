@@ -56,8 +56,8 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
         Rectangle displaySize = Display.getCurrent().getPrimaryMonitor().getBounds();
         configurer.setInitialSize(new Point(displaySize.width * 3 / 4, displaySize.height * 3 / 4));
         configurer.setShowCoolBar(true);
-        configurer.setShowStatusLine(false);
-        configurer.setShowPerspectiveBar(false);
+        configurer.setShowStatusLine(true);
+        configurer.setShowPerspectiveBar(true);
     }
 
     @Override
