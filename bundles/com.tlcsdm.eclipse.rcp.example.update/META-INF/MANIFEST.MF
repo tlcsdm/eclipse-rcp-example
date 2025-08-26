@@ -10,7 +10,12 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.equinox.p2.ui.sdk,
  org.eclipse.equinox.p2.core,
  org.eclipse.equinox.p2.engine,
- org.eclipse.equinox.p2.ui
+ org.eclipse.equinox.p2.ui,
+ org.eclipse.equinox.p2.transport.ecf,
+ org.eclipse.ecf.provider.filetransfer.httpclient5,
+ org.eclipse.ecf,
+ org.eclipse.ecf.provider.filetransfer,
+ org.eclipse.ecf.provider.filetransfer.httpclientjava
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.update
 Bundle-ActivationPolicy: lazy

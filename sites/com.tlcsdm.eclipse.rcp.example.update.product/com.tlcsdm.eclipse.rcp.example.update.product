@@ -331,8 +331,10 @@ version(s), and exceptions or additional permissions here}.&quot;
    <configurations>
       <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient5" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.transport.ecf" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
       <property name="org.eclipse.update.reconcile" value="false" />
