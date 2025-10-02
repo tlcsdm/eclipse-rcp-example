@@ -46,5 +46,5 @@ jobs:
     - name: Archive headless windows product
       uses: actions/upload-artifact@v4
       with:
-        name: update.product-win32.win32.x86_64
+        name: headless.product-win32.win32.x86_64
         path: sites/com.tlcsdm.eclipse.rcp.example.headless.product/target/products/*win32*.zip
