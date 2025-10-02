@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse RCP Example Update Standalone" uid="com.tlcsdm.eclipse.rcp.example.update.product" id="com.tlcsdm.eclipse.rcp.example.rcp.product" application="com.tlcsdm.eclipse.rcp.example.rcp.application" version="1.0.0.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="Eclipse RCP Example Headless Standalone" uid="com.tlcsdm.eclipse.rcp.example.headless.product" id="com.tlcsdm.eclipse.rcp.example.rcp.product" application="com.tlcsdm.eclipse.rcp.example.rcp.application" version="1.0.0.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
 
    <configIni use="default">
    </configIni>
@@ -22,7 +22,7 @@
       startupProgressRect="0,420,820,15"
       startupMessageRect="7,400,820,20"
       startupForegroundColor="FFFFFF" />
-   <launcher name="Eclipse RCP Example Update">
+   <launcher name="Eclipse RCP Example Headless">
       <win useIco="true">
          <ico path="icons/logo.ico"/>
          <bmp/>
@@ -323,27 +323,20 @@ version(s), and exceptions or additional permissions here}.&quot;
 
    <features>
       <feature id="org.eclipse.rcp"/>
-      <feature id="com.tlcsdm.eclipse.rcp.example.update.feature"/>
+      <feature id="com.tlcsdm.eclipse.rcp.example.headless.feature"/>
       <feature id="org.eclipse.justj.openjdk.hotspot.jre.full.stripped"/>
-      <feature id="org.eclipse.babel.nls_eclipse_zh"/>
    </features>
 
    <configurations>
       <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
-      <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient5" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
-      <plugin id="org.eclipse.equinox.p2.transport.ecf" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
       <property name="org.eclipse.update.reconcile" value="false" />
       <property name="osgi.instance.area" value="@user.home/eclipse-rcp-example/workspace" />
    </configurations>
-
-   <repositories>
-      <repository location="https://raw.githubusercontent.com/tlcsdm/eclipse-rcp-example/master/update_site/com.tlcsdm.eclipse.rcp.example.update.repo/" name="Eclipse Example Update RCP" enabled="true" />
-   </repositories>
 
    <preferencesInfo>
       <targetfile overwrite="false"/>

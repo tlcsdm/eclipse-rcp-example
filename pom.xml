@@ -451,6 +451,11 @@
               <attachId>com.tlcsdm.eclipse.rcp.example.update.product</attachId>
               <rootFolder>eclipse</rootFolder>
             </product>
+            <product>
+              <id>com.tlcsdm.eclipse.rcp.example.headless.product</id>
+              <attachId>com.tlcsdm.eclipse.rcp.example.headless.product</attachId>
+              <rootFolder>eclipse</rootFolder>
+            </product>
           </products>
         </configuration>
       </plugin>
