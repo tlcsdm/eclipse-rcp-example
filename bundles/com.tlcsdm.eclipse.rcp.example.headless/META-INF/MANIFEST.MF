@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse RCP Example Headless
+Bundle-SymbolicName: com.tlcsdm.eclipse.rcp.example.headless;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.tlcsdm.eclipse.rcp.example.headless.Activator
+Bundle-Vendor: Tlcsdm
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.headless
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.tlcsdm.eclipse.rcp.example.headless.feature"
+      label="Eclipse RCP Example Headless Feature"
+      version="1.0.0.qualifier"
+      provider-name="Tlcsdm"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
+
+   <description>
+      Eclipse Example RCP Headless Update
+   </description>
+   
+   <copyright>
+      Copyright (c) 2025 Tlcsdm. All rights reserved.
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="com.tlcsdm.eclipse.rcp.example.rcp.feature"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.tlcsdm.eclipse.rcp.example.headless"
+         version="0.0.0"/>
+
+</feature>
