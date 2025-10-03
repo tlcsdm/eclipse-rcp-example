@@ -48,77 +48,77 @@ import org.osgi.framework.FrameworkUtil;
  */
 public class Activator extends AbstractUIPlugin {
 
-	// The plug-in ID
-	public static final String PLUGIN_ID = "com.tlcsdm.eclipse.rcp.example.python3"; //$NON-NLS-1$
+    // The plug-in ID
+    public static final String PLUGIN_ID = "com.tlcsdm.eclipse.rcp.example.python3"; //$NON-NLS-1$
 
-	// The shared instance
-	private static Activator plugin;
+    // The shared instance
+    private static Activator plugin;
 
-	/**
-	 * The constructor
-	 */
-	public Activator() {
-	}
+    /**
+     * The constructor
+     */
+    public Activator() {
+    }
 
-	@Override
-	public void start(BundleContext context) throws Exception {
-		super.start(context);
-		plugin = this;
-		install();
-	}
+    @Override
+    public void start(BundleContext context) throws Exception {
+        super.start(context);
+        plugin = this;
+        install();
+    }
 
-	@Override
-	public void stop(BundleContext context) throws Exception {
-		plugin = null;
-		super.stop(context);
-	}
+    @Override
+    public void stop(BundleContext context) throws Exception {
+        plugin = null;
+        super.stop(context);
+    }
 
-	/**
-	 * Returns the shared instance
-	 *
-	 * @return the shared instance
-	 */
-	public static Activator getDefault() {
-		return plugin;
-	}
+    /**
+     * Returns the shared instance
+     *
+     * @return the shared instance
+     */
+    public static Activator getDefault() {
+        return plugin;
+    }
 
-	private static void install() throws IOException, URISyntaxException {
-		// 1. 获取安装目录
-		Path installDir = Paths.get(Platform.getInstallLocation().getURL().toURI());
-		Path target = installDir.resolve("runtimes/python");
-		// 确保目标目录存在，即使 runtimes 或 python 文件夹不存在
-		Files.createDirectories(target);
+    private static void install() throws IOException, URISyntaxException {
+        // 1. 获取安装目录
+        Path installDir = Paths.get(Platform.getInstallLocation().getURL().toURI());
+        Path target = installDir.resolve("runtimes/python");
+        // 确保目标目录存在，即使 runtimes 或 python 文件夹不存在
+        Files.createDirectories(target);
 
-		// 2. 检查是否已经安装过
-		Path pythonExe = target.resolve("python.exe");
-		if (!Files.exists(pythonExe)) {
-			// 解压 python3.zip
-			Bundle bundle = FrameworkUtil.getBundle(Activator.class);
-			if (bundle == null) {
-				throw new IOException("Python bundle not found");
-			}
+        // 2. 检查是否已经安装过
+        Path pythonExe = target.resolve("python.exe");
+        if (!Files.exists(pythonExe)) {
+            // 解压 python3.zip
+            Bundle bundle = FrameworkUtil.getBundle(Activator.class);
+            if (bundle == null) {
+                throw new IOException("Python bundle not found");
+            }
 
-			try (InputStream in = bundle.getEntry("python3.zip").openStream();
-					ZipInputStream zis = new ZipInputStream(in)) {
+            try (InputStream in = bundle.getEntry("python3.zip").openStream();
+                    ZipInputStream zis = new ZipInputStream(in)) {
 
-				ZipEntry entry;
-				while ((entry = zis.getNextEntry()) != null) {
-					Path filePath = target.resolve(entry.getName());
-					if (entry.isDirectory()) {
-						Files.createDirectories(filePath);
-					} else {
-						Files.createDirectories(filePath.getParent());
-						Files.copy(zis, filePath, StandardCopyOption.REPLACE_EXISTING);
-					}
-				}
-			}
-		}
+                ZipEntry entry;
+                while ((entry = zis.getNextEntry()) != null) {
+                    Path filePath = target.resolve(entry.getName());
+                    if (entry.isDirectory()) {
+                        Files.createDirectories(filePath);
+                    } else {
+                        Files.createDirectories(filePath.getParent());
+                        Files.copy(zis, filePath, StandardCopyOption.REPLACE_EXISTING);
+                    }
+                }
+            }
+        }
 
-		// 3. 配置 Py4J interpreter
-		// 只在 Windows x86_64 下配置
-		if (Platform.OS_WIN32.equals(Platform.getOS())) {
-			InstanceScope.INSTANCE.getNode("org.eclipse.ease.python.py4j").put("interpreter", pythonExe.toString());
-		}
-	}
+        // 3. 配置 Py4J interpreter
+        // 只在 Windows x86_64 下配置
+        if (Platform.OS_WIN32.equals(Platform.getOS())) {
+            InstanceScope.INSTANCE.getNode("org.eclipse.ease.python.py4j").put("interpreter", pythonExe.toString());
+        }
+    }
 
 }
