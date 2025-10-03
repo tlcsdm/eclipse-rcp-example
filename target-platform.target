@@ -59,6 +59,7 @@
 	    </location>
 	    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		    <repository id="py4j" location="http://eclipse.py4j.org/"/>
+		    <!--  <repository location="https://osate-build.sei.cmu.edu/p2/py4j"/> -->
 		    <unit id="org.py4j.feature.feature.group" version="0.0.0"/>
 	    </location>
 	    <!-- 
