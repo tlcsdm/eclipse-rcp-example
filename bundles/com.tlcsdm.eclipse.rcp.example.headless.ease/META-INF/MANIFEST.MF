@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse RCP Example EASE
+Bundle-SymbolicName: com.tlcsdm.eclipse.rcp.example.headless.ease;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.tlcsdm.eclipse.rcp.example.headless.ease.Activator
+Bundle-Vendor: Tlcsdm
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ease,
+ org.eclipse.ease.lang.python.py4j
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.headless.ease
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+      <extension
+            point="org.eclipse.ui.activities">
+            <activityPatternBinding
+                activityId="com.tlcsdm.eclipse.rcp.example.rcp.hideAnnotation"
+                pattern="org.eclipse.ease.ui/(?!org.eclipse.ease.preferences.root).*">
+            </activityPatternBinding>
+            <activityPatternBinding
+                activityId="com.tlcsdm.eclipse.rcp.example.rcp.hideAnnotation"
+                pattern="org.eclipse.ease.ui.scripts/.*">
+            </activityPatternBinding>
+      </extension>
+      
+      <extension
+             point="org.eclipse.ease.modules">
+           <category
+              id="com.tlcsdm.eclipse.rcp.example.headless.ease.category.module"
+              name="EASE Example Modules">
+          </category>
+          <module
+              category="com.tlcsdm.eclipse.rcp.example.headless.ease.category.module"
+              class="com.tlcsdm.eclipse.rcp.example.headless.ease.module.HelloModule"
+              id="com.tlcsdm.eclipse.rcp.example.headless.ease.category.module.hellomodule"
+              name="HelloModule"
+              visible="true">
+          </module>
+   </extension>
+</plugin>

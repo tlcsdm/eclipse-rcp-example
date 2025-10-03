@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Python3 Window X86_64
+Bundle-SymbolicName: com.tlcsdm.eclipse.rcp.example.python3.win32.x86_64;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Eclipse-PlatformFilter: (& (osgi.os=win32) (osgi.arch=x86_64))
+Bundle-Activator: com.tlcsdm.eclipse.rcp.example.python3.Activator
+Bundle-Vendor: Tlcsdm
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.osgi
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.python3.win32.x86.64
+Bundle-ActivationPolicy: lazy

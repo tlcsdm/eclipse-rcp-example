@@ -324,6 +324,8 @@ version(s), and exceptions or additional permissions here}.&quot;
    <features>
       <feature id="org.eclipse.rcp"/>
       <feature id="com.tlcsdm.eclipse.rcp.example.headless.feature"/>
+      <feature id="com.tlcsdm.eclipse.rcp.example.headless.ease.feature"/>
+      <feature id="com.tlcsdm.eclipse.rcp.example.rcp.feature"/>
       <feature id="org.eclipse.justj.openjdk.hotspot.jre.full.stripped"/>
    </features>
 
@@ -335,7 +337,7 @@ version(s), and exceptions or additional permissions here}.&quot;
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
       <property name="org.eclipse.update.reconcile" value="false" />
-      <property name="osgi.instance.area" value="@user.home/eclipse-rcp-example/workspace" />
+      <property name="osgi.instance.area" value="@user.home/eclipse-rcp-example-headless/workspace" />
    </configurations>
 
    <preferencesInfo>

@@ -338,7 +338,7 @@ version(s), and exceptions or additional permissions here}.&quot;
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
       <property name="org.eclipse.update.reconcile" value="false" />
-      <property name="osgi.instance.area" value="@user.home/eclipse-rcp-example/workspace" />
+      <property name="osgi.instance.area" value="@user.home/eclipse-rcp-example-update/workspace" />
    </configurations>
 
    <repositories>
