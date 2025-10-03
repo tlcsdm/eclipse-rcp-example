@@ -72,5 +72,9 @@
    <plugin
          id="py4j-java"
          version="0.0.0"/>
+         
+   <plugin
+         id="com.tlcsdm.eclipse.rcp.example.headless.ease"
+         version="0.0.0"/>
 
 </feature>
