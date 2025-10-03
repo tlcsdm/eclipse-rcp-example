@@ -10,7 +10,7 @@
    <description>
       Eclipse Example RCP Headless EASE Update
    </description>
-   
+
    <copyright>
       Copyright (c) 2025 Tlcsdm. All rights reserved.
    </copyright>
@@ -18,7 +18,7 @@
    <license url="%licenseURL">
       %license
    </license>
-   
+
    <requires>
       <import plugin="org.eclipse.help" version="3.5.0" match="compatible"/>
       <import plugin="org.eclipse.core.runtime" version="3.7.0" match="compatible"/>
@@ -72,9 +72,18 @@
    <plugin
          id="py4j-java"
          version="0.0.0"/>
-         
+
    <plugin
          id="com.tlcsdm.eclipse.rcp.example.headless.ease"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.tlcsdm.eclipse.rcp.example.python3.win32.x86_64"
+         os="win32"
+         arch="x86_64"
+         unpack="false"
+         download-size="0"
+         install-size="0"
          version="0.0.0"/>
 
 </feature>

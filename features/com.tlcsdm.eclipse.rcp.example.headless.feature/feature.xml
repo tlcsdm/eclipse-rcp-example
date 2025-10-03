@@ -19,14 +19,6 @@
       %license
    </license>
 
-   <includes
-         id="com.tlcsdm.eclipse.rcp.example.headless.ease.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="com.tlcsdm.eclipse.rcp.example.rcp.feature"
-         version="0.0.0"/>
-
    <plugin
          id="com.tlcsdm.eclipse.rcp.example.headless"
          version="0.0.0"/>
