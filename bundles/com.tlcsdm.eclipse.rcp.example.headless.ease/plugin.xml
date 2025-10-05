@@ -10,7 +10,7 @@
             <activityPatternBinding
                 activityId="com.tlcsdm.eclipse.rcp.example.rcp.hideAnnotation"
                 pattern="org.eclipse.ease.ui.scripts/.*">
-            </activityPatternBinding>
+            </activityPatternBinding> 
       </extension>
       
       <extension

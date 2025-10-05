@@ -117,8 +117,10 @@ public class Activator extends AbstractUIPlugin {
         // 3. 配置 Py4J interpreter
         // 只在 Windows x86_64 下配置
         if (Platform.OS_WIN32.equals(Platform.getOS())) {
-            InstanceScope.INSTANCE.getNode("org.eclipse.ease.python.py4j").put("interpreter", pythonExe.toString());
+            InstanceScope.INSTANCE.getNode("org.eclipse.ease.lang.python.py4j").put("INTERPRETER",
+                    pythonExe.toString());
         }
+        InstanceScope.INSTANCE.getNode("org.eclipse.ease.lang.python.py4j").put("IGNORE_PYTHON_ENV_VARIABLES", "true");
     }
 
 }
