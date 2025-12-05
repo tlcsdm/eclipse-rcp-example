@@ -25,5 +25,9 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
+   <plugin
+         id="com.tlcsdm.eclipse.rcp.example.intro"
+         version="0.0.0"/>
+
 </feature>

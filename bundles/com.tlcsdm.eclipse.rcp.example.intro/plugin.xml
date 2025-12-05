@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="com.tlcsdm.eclipse.rcp.example.intro"
+         point="org.eclipse.ui.intro">
+      <intro
+            class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+            id="com.tlcsdm.eclipse.rcp.example.intro">
+      </intro>
+      <introProductBinding
+            introId="com.tlcsdm.eclipse.rcp.example.intro"
+            productId="com.tlcsdm.eclipse.rcp.example.rcp.product">
+      </introProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.config">
+      <config
+            content="intro/introContent.xml"
+            id="com.tlcsdm.eclipse.rcp.example.introConfigId"
+            introId="com.tlcsdm.eclipse.rcp.example.intro">
+        <presentation home-page-id="homePageId" standby-page-id="homePageId">
+            <implementation kind="html" />
+        </presentation>
+      </config>
+   </extension>
+
+</plugin>
