@@ -7,11 +7,12 @@
             <repository location="https://mirrors.aliyun.com/eclipse/releases/2025-03/"/>
             <unit id="org.eclipse.platform.feature.group" version="0.0.0"/>
             <unit id="org.eclipse.equinox.sdk.feature.group" version="0.0.0"/>
+            <unit id="org.eclipse.equinox.core.sdk.feature.group" version="0.0.0"/>
+            <unit id="org.eclipse.equinox.executable" version="0.0.0"/>
             <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="0.0.0"/>
             <unit id="org.eclipse.equinox.p2.extras.feature.feature.group" version="0.0.0"/>
             <unit id="org.eclipse.equinox.p2.rcp.feature.feature.group" version="0.0.0"/>
             <unit id="org.eclipse.equinox.p2.core.feature.feature.group" version="0.0.0"/>
-            <unit id="org.eclipse.sdk.feature.group" version="0.0.0"/> <!-- org.eclipse.equinox.p2.iu -->
             <unit id="org.eclipse.fx.runtime.min.feature.feature.group" version="0.0.0"/>
             <unit id="org.eclipse.draw2d.feature.group" version="0.0.0"/>
             <unit id="org.eclipse.gef.feature.group" version="0.0.0"/>
