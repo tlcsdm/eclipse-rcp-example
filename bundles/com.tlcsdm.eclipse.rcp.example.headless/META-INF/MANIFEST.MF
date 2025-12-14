@@ -7,6 +7,6 @@ Bundle-Activator: com.tlcsdm.eclipse.rcp.example.headless.Activator
 Bundle-Vendor: Tlcsdm
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.headless
 Bundle-ActivationPolicy: lazy

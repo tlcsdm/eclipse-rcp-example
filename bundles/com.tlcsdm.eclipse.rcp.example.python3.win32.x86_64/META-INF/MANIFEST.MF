@@ -9,6 +9,6 @@ Bundle-Vendor: Tlcsdm
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.osgi
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.python3.win32.x86.64
 Bundle-ActivationPolicy: lazy
