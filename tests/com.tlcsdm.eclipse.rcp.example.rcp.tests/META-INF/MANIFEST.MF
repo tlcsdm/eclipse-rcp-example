@@ -4,7 +4,7 @@ Bundle-Name: Eclipse RCP Example Tests
 Bundle-SymbolicName: com.tlcsdm.eclipse.rcp.example.rcp.tests
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Tlcsdm
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.rcp.tests
 Export-Package: com.tlcsdm.eclipse.rcp.example.rcp.tests
 Require-Bundle: org.eclipse.ui,

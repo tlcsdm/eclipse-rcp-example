@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target includeMode="feature" name="nebula">
+    <locations>
+	    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+            <repository location="https://mirrors.aliyun.com/eclipse/nebula/releases/latest/"/>
+			<unit id="org.eclipse.nebula.widgets.gallery.feature.feature.group" version="0.0.0"/>
+			<unit id="org.eclipse.nebula.widgets.opal.checkboxgroup.feature.feature.group" version="0.0.0"/>
+			<unit id="org.eclipse.nebula.widgets.stepbar.feature.feature.group" version="0.0.0"/>
+			<unit id="org.eclipse.nebula.widgets.opal.rangeslider.feature.feature.group" version="0.0.0"/>
+        </location>
+    </locations>
+</target>

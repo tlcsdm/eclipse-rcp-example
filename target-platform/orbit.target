@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target includeMode="feature" name="orbit">
+    <locations>
+	    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+		    <repository location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2025-03/"/>
+		    <unit id="com.google.gson" version="0.0.0"/>
+		    <unit id="com.google.guava" version="0.0.0"/>
+		    <unit id="jakarta.inject.jakarta.inject-api" version="0.0.0"/>
+			<unit id="org.apache.batik.css" version="0.0.0"/>
+			<unit id="org.apache.batik.util" version="0.0.0"/>
+			<unit id="org.apache.batik.i18n" version="0.0.0"/>
+			<unit id="org.apache.batik.constants" version="0.0.0"/>
+		    <unit id="org.yaml.snakeyaml" version="0.0.0"/>
+		    <unit id="com.sun.jna" version="0.0.0"/>
+			<unit id="com.sun.jna.platform" version="0.0.0"/>
+            <unit id="slf4j.api" version="0.0.0"/>
+            <unit id="ch.qos.logback.core" version="0.0.0"/>
+            <unit id="ch.qos.logback.classic" version="0.0.0"/>
+            <unit id="org.apache.commons.commons-collections4" version="0.0.0"/>
+			<unit id="org.apache.commons.lang3" version="0.0.0"/>
+			<unit id="org.apache.commons.commons-io" version="0.0.0"/>
+	    </location>
+    </locations>
+</target>
