@@ -85,14 +85,12 @@
 		    <unit id="org.python.pydev.feature.feature.group" version="0.0.0"/>
 	    </location>
 	    -->
-	    
-	    <!-- old orbit
+
 	    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
 		    <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository/"/>
 		    <unit id="javax.inject" version="0.0.0"/>
-		    <unit id="org.mozilla.javascript" version="0.0.0"/>
 	    </location>
-	    -->
+
 	    <!-- orbit
 	    <location type="Target" uri="file:${project_loc:/eclipse-rcp-example}/target-platform/orbit.target"/> 
 	    -->
