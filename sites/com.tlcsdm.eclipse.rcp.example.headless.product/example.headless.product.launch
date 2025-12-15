@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.pde.ui.RuntimeWorkbench">
     <setAttribute key="additional_plugins">
-        <setEntry value="org.apache.felix.scr:2.2.10:default:false:2:true"/>
-        <setEntry value="org.eclipse.core.runtime:3.31.100.v20240524-2010:default:false:4:true"/>
-        <setEntry value="org.eclipse.equinox.common:3.19.100.v20240524-2011:default:false:2:true"/>
-        <setEntry value="org.eclipse.equinox.event:1.7.100.v20240321-1445:default:false:2:true"/>
-        <setEntry value="org.eclipse.equinox.simpleconfigurator:1.5.300.v20240424-1301:default:false:1:true"/>
+        <setEntry value="org.apache.felix.scr:2.2.12:default:false:2:true"/>
+        <setEntry value="org.eclipse.core.runtime:3.33.0.v20250206-0919:default:false:4:true"/>
+        <setEntry value="org.eclipse.equinox.common:3.20.0.v20250129-1348:default:false:2:true"/>
+        <setEntry value="org.eclipse.equinox.event:1.7.200.v20250129-1349:default:false:2:true"/>
+        <setEntry value="org.eclipse.equinox.simpleconfigurator:1.5.400.v20250129-0942:default:false:1:true"/>
     </setAttribute>
     <booleanAttribute key="append.args" value="true"/>
     <stringAttribute key="application" value="com.tlcsdm.eclipse.rcp.example.rcp.application"/>

@@ -8,6 +8,7 @@ Bundle-Vendor: Tlcsdm
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.ui.intro
+Export-Package: com.tlcsdm.eclipse.rcp.example.intro.handler
 Bundle-RequiredExecutionEnvironment: JavaSE-21
 Automatic-Module-Name: com.tlcsdm.eclipse.rcp.example.intro
 Bundle-ActivationPolicy: lazy
