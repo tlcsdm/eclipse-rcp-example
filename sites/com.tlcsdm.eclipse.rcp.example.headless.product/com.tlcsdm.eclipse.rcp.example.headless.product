@@ -9,7 +9,7 @@
    <launcherArgs>
       <programArgs>--launcher.defaultAction openFile
       </programArgs>
-      <vmArgs>-Declipse.p2.max.threads=10 -Dosgi.requiredJavaVersion=21 -Dosgi.dataAreaRequiresExplicitInit=true -XX:+UseG1GC -XX:+UseStringDeduplication -Xms512m -Xmx1g --add-modules=ALL-SYSTEM
+      <vmArgs>-Declipse.p2.max.threads=10 -Dosgi.requiredJavaVersion=21 -Dosgi.dataAreaRequiresExplicitInit=true -XX:+UseG1GC -XX:+UseStringDeduplication -Xms256m -Xmx1g --add-modules=ALL-SYSTEM
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>

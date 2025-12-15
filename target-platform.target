@@ -37,6 +37,7 @@
 			<unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.0.0"/>
 			<unit id="org.eclipse.graphiti.feature.tools.feature.group" version="0.0.0"/>
 			<unit id="org.eclipse.graphiti.mm" version="0.0.0"/>
+			<unit id="org.eclipse.help.feature.group" version="0.0.0"/>
             <unit id="junit-jupiter-api"/>
 			<unit id="junit-jupiter-engine"/>
         </location>
