@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <introContent>
   <page id="updateHomePageId" url="updateWelcome.html" />
+  <!-- <html text="Eclipse RCP Example" id="my web site" src="https://github.com/tlcsdm/eclipse-rcp-example" type="inline"  />  -->
 </introContent>
