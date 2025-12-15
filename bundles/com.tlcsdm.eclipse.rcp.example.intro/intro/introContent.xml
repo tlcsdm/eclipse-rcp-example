@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <introContent>
-  <page id="homePageId" url="welcome.html" />
+    <!-- <page id="homePageId" url="welcome.html" /> -->
+    <page id="homePageId" content="intro/root.xhtml"/>
+    <page id="overview" content="intro/overview.xhtml"/>
+    <page id="whatsnew" content="intro/whatsnew.xhtml"/>
+    <page id="webresources" content="intro/webresources.xhtml"/>
 </introContent>

@@ -41,9 +41,6 @@ public class ShowWelcomeHandler extends AbstractHandler {
         if (window != null) {
             IIntroManager introManager = PlatformUI.getWorkbench().getIntroManager();
             try {
-                if (!introManager.hasIntro()) {
-                    return null;
-                }
                 introManager.showIntro(window, false);
             } catch (Exception e) {
                 throw new ExecutionException("Failed to open welcome intro", e);
