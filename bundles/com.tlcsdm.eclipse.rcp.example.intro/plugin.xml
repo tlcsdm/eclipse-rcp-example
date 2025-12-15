@@ -13,13 +13,79 @@
             productId="com.tlcsdm.eclipse.rcp.example.rcp.product">
       </introProductBinding>
    </extension>
+
+   <extension
+         id="com.tlcsdm.eclipse.rcp.example.intro.update"
+         point="org.eclipse.ui.intro">
+      <intro
+            class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+            id="com.tlcsdm.eclipse.rcp.example.intro.update">
+      </intro>
+      <introProductBinding
+            introId="com.tlcsdm.eclipse.rcp.example.intro.update"
+            productId="com.tlcsdm.eclipse.rcp.example.update.product">
+      </introProductBinding>
+   </extension>
+
    <extension
          point="org.eclipse.ui.intro.config">
+         <!--
       <config
             content="intro/introContent.xml"
             id="com.tlcsdm.eclipse.rcp.example.introConfigId"
             introId="com.tlcsdm.eclipse.rcp.example.intro">
         <presentation home-page-id="homePageId" standby-page-id="homePageId">
+            <implementation kind="html" />
+        </presentation>
+      </config>
+      -->
+      
+      <config
+            introId="com.tlcsdm.eclipse.rcp.example.intro"
+            id="com.tlcsdm.eclipse.rcp.example.introConfigId.swt"
+            content="$nl$/intro/swt/introContentswt.xml">
+         <presentation
+               home-page-id="root" standby-page-id="standby">
+            <implementation
+                  style="$nl$/intro/swt/css/shared.css"
+                  kind="html"
+                  os="win32,linux,macosx">
+            </implementation>
+            <implementation
+                  kind="swt">
+            </implementation>
+            <!--
+            fg="#7269d2" 
+            -->
+            <launchBar 	
+            	location="fastview" 
+            	bg="#c6c3e8" 
+            	>
+               <shortcut
+                     icon="intro/swt/css/graphics/icons/etool/overview.gif"
+                     tooltip="Overview"
+                     url="http://org.eclipse.ui.intro/showPage?id=overview"/>
+               <shortcut
+                     tooltip="Tutorials"
+                     icon="intro/swt/css/graphics/icons/etool/tutorials.gif"
+                     url="http://org.eclipse.ui.intro/showPage?id=tutorials"/>
+               <shortcut
+                     tooltip="Samples"
+                     icon="intro/swt/css/graphics/icons/etool/samples.gif"
+                     url="http://org.eclipse.ui.intro/showPage?id=samples"/>
+               <shortcut
+                     tooltip="What's New"
+                     icon="intro/swt/css/graphics/icons/etool/whatsnew.gif"
+                     url="http://org.eclipse.ui.intro/showPage?id=news"/>                                             
+            </launchBar>
+         </presentation>
+      </config>
+
+      <config
+            content="intro/introUpdateContent.xml"
+            id="com.tlcsdm.eclipse.rcp.example.introUpdateConfigId"
+            introId="com.tlcsdm.eclipse.rcp.example.intro.update">
+        <presentation home-page-id="updateHomePageId" standby-page-id="updateHomePageId">
             <implementation kind="html" />
         </presentation>
       </config>
