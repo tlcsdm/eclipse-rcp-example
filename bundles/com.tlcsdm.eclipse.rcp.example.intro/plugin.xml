@@ -24,5 +24,28 @@
         </presentation>
       </config>
    </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:com.tlcsdm.eclipse.rcp.example.rcp.menus.help?before=additions">
+         <command
+               commandId="com.tlcsdm.eclipse.rcp.example.intro.command.welcome"
+               label="Welcome"
+               style="push"
+               icon="platform:/plugin/org.eclipse.ui.intro/icons/welcome16.png">
+         </command>
+         <separator name="com.tlcsdm.eclipse.rcp.example.rcp.menus.separator.welcome" visible="true" />
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands">
+      <command id="com.tlcsdm.eclipse.rcp.example.intro.command.welcome" name="Show Welcome" />
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers">
+      <handler commandId="com.tlcsdm.eclipse.rcp.example.intro.command.welcome"
+               class="com.tlcsdm.eclipse.rcp.example.intro.handler.ShowWelcomeHandler" />
+   </extension>
 
 </plugin>
