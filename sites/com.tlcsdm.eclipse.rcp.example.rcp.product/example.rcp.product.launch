@@ -433,6 +433,7 @@
     </setAttribute>
     <setAttribute key="selected_workspace_bundles">
         <setEntry value="com.tlcsdm.eclipse.rcp.example.rcp@default:default"/>
+        <setEntry value="com.tlcsdm.eclipse.rcp.example.intro@default:default"/>
     </setAttribute>
     <booleanAttribute key="show_selected_only" value="true"/>
     <booleanAttribute key="tracing" value="false"/>
