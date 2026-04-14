@@ -21,9 +21,9 @@
 ### 2. Headless 应用
 `bundles/com.tlcsdm.eclipse.rcp.example.headless` 提供无界面的命令行应用示例，可用于演示以下能力：
 
-- 命令行参数处理
-- 独立执行任务
-- 文件输出能力
+- 命令行参数处理（例如 `-help`、`-hello`、`-output`）
+- 独立执行任务（例如命令行触发的批处理或生成任务）
+- 文件输出能力（可按参数创建输出文件或目录）
 
 ### 3. Intro / Welcome 页面
 `bundles/com.tlcsdm.eclipse.rcp.example.intro` 提供欢迎页相关配置，可作为 Eclipse 产品首页定制示例。
@@ -50,12 +50,12 @@
 - 想同时维护 GUI 应用、Headless 应用和 Update Site
 - 想参考 Eclipse 插件产品化与自动化测试示例
 
-## 构建要求
+## 构建要求 / Requirements
 
 本项目使用 [Tycho](https://github.com/eclipse-tycho/tycho) 和 [Maven](https://maven.apache.org/) 构建。
 
-- **JDK 21 或更高版本**
-- **Maven 3.9.0 或更高版本**
+- **JDK 21+**
+- **Maven 3.9.0+**
 - 构建前建议先执行 `java -version`，确认当前环境已切换到 JDK 21
 
 ## Build
