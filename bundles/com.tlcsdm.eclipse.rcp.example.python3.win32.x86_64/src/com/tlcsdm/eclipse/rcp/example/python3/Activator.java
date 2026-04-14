@@ -88,6 +88,7 @@ public class Activator extends AbstractUIPlugin {
         Path target = installDir.resolve("runtimes/python");
         // 确保目标目录存在，即使 runtimes 或 python 文件夹不存在
         Files.createDirectories(target);
+        Path normalizedTarget = target.toAbsolutePath().normalize();
 
         // 2. 检查是否已经安装过
         Path pythonExe = target.resolve("python.exe");
@@ -103,7 +104,10 @@ public class Activator extends AbstractUIPlugin {
 
                 ZipEntry entry;
                 while ((entry = zis.getNextEntry()) != null) {
-                    Path filePath = target.resolve(entry.getName());
+                    Path filePath = normalizedTarget.resolve(entry.getName()).normalize();
+                    if (!filePath.startsWith(normalizedTarget)) {
+                        throw new IOException("Bad zip entry: " + entry.getName());
+                    }
                     if (entry.isDirectory()) {
                         Files.createDirectories(filePath);
                     } else {
