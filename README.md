@@ -11,7 +11,7 @@
 ## 当前项目包含什么
 
 ### 1. RCP 桌面应用
-主应用位于 `bundles/com.tlcsdm.eclipse.rcp.example.rcp`，包含：
+主应用位于 `bundles/com.tlcsdm.eclipse.rcp.example.rcp`，包含以下内容：
 
 - Eclipse RCP 产品定义
 - 自定义 Perspective
@@ -19,7 +19,7 @@
 - 简单交互界面（标签 + 按钮）
 
 ### 2. Headless 应用
-`bundles/com.tlcsdm.eclipse.rcp.example.headless` 提供无界面的命令行应用示例，适合演示：
+`bundles/com.tlcsdm.eclipse.rcp.example.headless` 提供无界面的命令行应用示例，可用于演示以下能力：
 
 - 命令行参数处理
 - 独立执行任务
