@@ -55,7 +55,7 @@
 本项目使用 [Tycho](https://github.com/eclipse-tycho/tycho) 和 [Maven](https://maven.apache.org/) 构建。
 
 - **JDK 21+**
-- **Maven 3.9.0+**
+- **Maven 3.9.0 or newer**
 - 构建前建议先执行 `java -version`，确认当前环境已切换到 JDK 21
 
 ## Build
