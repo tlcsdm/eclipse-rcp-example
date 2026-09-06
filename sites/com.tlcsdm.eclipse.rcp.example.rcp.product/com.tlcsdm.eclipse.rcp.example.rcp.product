@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse RCP Example Standalone" uid="com.tlcsdm.eclipse.rcp.example.rcp.product" id="com.tlcsdm.eclipse.rcp.example.rcp.product" application="com.tlcsdm.eclipse.rcp.example.rcp.application" version="1.0.0.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="Eclipse RCP Example Standalone" uid="com.tlcsdm.eclipse.rcp.example.rcp.product" id="com.tlcsdm.eclipse.rcp.example.rcp.product" application="com.tlcsdm.eclipse.rcp.example.rcp.application" version="1.0.1.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
 
    <configIni use="default">
    </configIni>

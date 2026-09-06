@@ -2,7 +2,7 @@
 <feature
       id="com.tlcsdm.eclipse.rcp.example.headless.ease.feature"
       label="Eclipse RCP Example Headless EASE Feature"
-      version="1.0.0.qualifier"
+      version="1.0.1.qualifier"
       provider-name="Tlcsdm"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">

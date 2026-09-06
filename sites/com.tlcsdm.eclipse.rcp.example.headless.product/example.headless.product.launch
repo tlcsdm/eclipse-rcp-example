@@ -36,7 +36,7 @@
     <stringAttribute key="productFile" value="\com.tlcsdm.eclipse.rcp.example.update.product\com.tlcsdm.eclipse.rcp.example.update.product"/>
     <stringAttribute key="productId" value="com.tlcsdm.eclipse.rcp.example.update.product"/>
     <stringAttribute key="productName" value="Eclipse RCP Example Update Standalone"/>
-    <stringAttribute key="productVersion" value="1.0.0.qualifier"/>
+    <stringAttribute key="productVersion" value="1.0.1.qualifier"/>
     <setAttribute key="root_features"/>
     <setAttribute key="selected_features">
         <setEntry value="com.tlcsdm.eclipse.rcp.example.headless.ease.feature:default"/>
