@@ -41,7 +41,7 @@
 			<unit id="junit-jupiter-engine"/>
         </location>
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-            <repository location="https://mirrors.aliyun.com/eclipse/efxclipse/runtime-shared-released/3.9.0/site/"/>
+            <repository location="https://mirrors.aliyun.com/eclipse/efxclipse/runtime-shared-released/3.11.0/repository/"/>
             <unit id="org.eclipse.fx.runtime.min.feature.feature.group" version="0.0.0"/>
         </location>
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
