@@ -2,7 +2,7 @@
 <feature
       id="com.tlcsdm.eclipse.rcp.example.rcp.feature"
       label="Eclipse RCP Example"
-      version="1.0.1.qualifier"
+      version="1.1.0.qualifier"
       provider-name="Tlcsdm"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">
